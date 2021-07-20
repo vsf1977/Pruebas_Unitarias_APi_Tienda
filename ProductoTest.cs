@@ -48,7 +48,7 @@ namespace API_Tiendas.Test
             //Se verifica que el tipo de resultado sea BadRequestObjectResult con un valor string y se verifica que el string sea el esperado
             Assert.IsInstanceOfType(response, typeof(BadRequestObjectResult));
             Assert.IsInstanceOfType((response as BadRequestObjectResult).Value, typeof(string));
-            Assert.AreEqual((response as BadRequestObjectResult).Value, "The discount musn´t be greater than 50%");
+            Assert.AreEqual((response as BadRequestObjectResult).Value, "The discount musn´t be greater than 50% in colombia and mexico");
         }
 
 
