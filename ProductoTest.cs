@@ -15,7 +15,7 @@ namespace API_Tiendas.Test
             // Arrange
             Producto producto = new Producto();
             ProductoController productoController = new ProductoController();
-            producto.idProducto = "205";
+            producto.idProducto = 205;
             producto.nombre = "Camisa";
             producto.descripcion = "Camisa fina";
             producto.precio = 500;
@@ -26,7 +26,7 @@ namespace API_Tiendas.Test
             //Assert 
             //Se verifica que el tipo de resultado sea ObjectResult
             Assert.IsInstanceOfType(response, typeof(ObjectResult));
-            Assert.IsInstanceOfType((response as ObjectResult).Value, typeof(string));
+            Assert.IsInstanceOfType((response as ObjectResult).Value, typeof(Producto));
 
         }
 
@@ -36,7 +36,7 @@ namespace API_Tiendas.Test
             // Arrange
             Producto producto = new Producto();
             ProductoController productoController = new ProductoController();
-            producto.idProducto = "205";
+            producto.idProducto = 205;
             producto.nombre = "Camisa";
             producto.descripcion = "Camisa fina";
             producto.precio = 500;
